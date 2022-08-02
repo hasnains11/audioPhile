@@ -9,7 +9,6 @@ function App() {
       <div style={{background:'black'}}>
         <Navbar/>
       </div>
-      
       <Home></Home>
     </div>
   );

@@ -27,7 +27,7 @@ const NavbarStyles = {
   display: "flex",
   justifyContent: "flex-start",
   alignItems: "center",
-  px: [5, 8, 8, 8],
+  px: [0, 0, 8, 8],
 };
 const MenuItems = () => (
   <Box

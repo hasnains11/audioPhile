@@ -1,0 +1,9 @@
+*{
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+@media(min-width:480px) {
+    html{
+        font-size: 12px;
+    }
+}
