@@ -1,12 +1,15 @@
-import { Box, Text, Image, Flex } from "@chakra-ui/react";
+import { Box, Text, Image, Flex, Button,useDisclosure} from "@chakra-ui/react";
 import { ArrowDownIcon } from "@chakra-ui/icons";
 import { CartIcon, Logo, Hamburger } from "../icons";
+
 import { useState } from "react";
+import MobileNav from "./MobileNav";
 
 const menuItemStyles = {
   textTransform: "uppercase",
   ml: 4,
-  color: "white",
+  color:'white',
+  fontWeight:'bolder',
   _hover: { color: "orange.200", cursor: "pointer" },
 };
 const onScrollProperties = {
@@ -14,6 +17,7 @@ const onScrollProperties = {
   top: 0,
   left: 0,
   right: 0,
+  color: "white"
   
 };
 let navbarStyles = {
@@ -41,6 +45,7 @@ const MenuItems = () => (
     direction="row"
     fontSize={15}
     fontWeight="semibold"
+    
   >
     <Text {...menuItemStyles}>Home</Text>
     <Text {...menuItemStyles}>HeadPhones</Text>
@@ -49,10 +54,23 @@ const MenuItems = () => (
   </Box>
 );
 
+
+
+
+
+
 const Navbar = () => {
   const [navstyles, setNavstyle] = useState(navbarStyles);
+  const [mobileNav,setMobileNavTrue]=useState(false);
+  const { isOpen, onOpen, onClose } = useDisclosure();
+  
 
-  window.addEventListener("scroll", onScroll);
+  window.addEventListener("scroll ", onScroll);
+
+  function displayMobileNav(){
+
+  }
+
 
   function onScroll(e) {
     if (window.scrollY > 65) {
@@ -66,16 +84,19 @@ const Navbar = () => {
       <Box {...navstyles} transition="border-bottom 2s">
         <Box as="div">
           <Flex
+          
             alignItems={"center"}
             _hover={{ color: "gray.300" }}
             display={["inline-block", "inline-block", "none", "none"]}
             me={[4, 4, 0, 0]}
           >
-            {Hamburger()}
+            <button onClick={()=>onOpen()}>{Hamburger()}</button>
           </Flex>
           <Logo style={{ height: "1rem", width: "3rem" }} />
         </Box>
-        <MenuItems />
+        <MobileNav onClose={onClose} isOpen={isOpen} ></MobileNav>
+        <MenuItems /> 
+        
         <CartIcon style={{ height: 20, width: 24 }} />
       </Box>
   );

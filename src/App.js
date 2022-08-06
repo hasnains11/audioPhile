@@ -7,6 +7,7 @@ function App() {
   const colors={orange:'#d87c49'}
   return (
     <div className="App">
+      
       <div style={{background:'black'}}>
         <Navbar/>
       </div>
