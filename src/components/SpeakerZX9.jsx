@@ -1,5 +1,6 @@
 import { Box, Button, Image, Text } from "@chakra-ui/react";
 import img1 from "./../assets/shared/desktop/image-speaker-zx9.png";
+import img from './../assets/home/tablet/image-speaker-zx9.png'
 const SpeakerZX9 = () => {
   return (
     <Box
@@ -7,8 +8,9 @@ const SpeakerZX9 = () => {
       w={"80%"}
       flexDirection={["column", "column", "row"]}
       mb="2rem"
-      h={["35rem", "35rem", "25rem"]}
+      h={"35rem"}
       background={"#d87649"}
+      columnGap={{md:'2rem'}}
       m="auto"
       borderRadius={"1rem"}
       alignItems={"center"}
@@ -17,10 +19,11 @@ const SpeakerZX9 = () => {
     >
       <Box pl={["0", "0", "3rem"]} ml={["", "", "auto"]}>
         <Image
-          h={["11rem", "13rem", "23rem"]}
-          mb="-3rem"
+         mt={['1rem','2rem','0']}
+          h={["11rem", "13rem", "30rem"]}
+          mb={{md:"-6rem"}}
           maxW={"none"}
-          src={img1}
+          src={img}
         />
       </Box>
 
@@ -28,16 +31,15 @@ const SpeakerZX9 = () => {
         display={"flex"}
         flexDirection={"column"}
         w={{ md: "100%", lg: "55%" }}
-        mt={"5rem"}
-        ml={"auto"}
-        mr={"auto"}
-        pl={{base:'0',md:"2rem"}}
-        alignSelf={{ md: "center", lg: "flex-start" }}
+        m={'auto'}
+       
+        alignSelf={{ md: "end"}}
       >
         <Box 
             display={'block'}
-          fontSize={["1.5rem", "2.5rem", "3rem"]}
-          mt={['1rem','2rem','0']}
+            fontSize={['3xl','4xl','5xl']}
+        
+            mt={['1rem','2rem','0']}
             fontWeight={['700','800']}          
           textAlign={['center','center','left']}
           mb={["-1rem", "-1rem", "1rem"]}
@@ -49,7 +51,7 @@ const SpeakerZX9 = () => {
             color="#fff"
             textTransform={"uppercase"}
             mb={"1.5rem"}
-            mt={"-2rem"}
+            mt={['-5rem','-5rem',"-2rem"]}
           >
             {" "}
             ZX9{" "}
@@ -58,8 +60,8 @@ const SpeakerZX9 = () => {
             lineHeight={1}
             color="#fff"
             textTransform={"uppercase"}
-            mb={"1.5rem"}
-            mt={"-2rem"}
+            mb={["2.5rem",'2.5rem','1.5rem']}
+            mt={'-2rem'}
           >
             Speaker
           </Text>

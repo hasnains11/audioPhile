@@ -25,8 +25,8 @@ const theme = extendTheme({
         },
         sm:{
             fontSize:'sm',
-            py:'0.6rem', 
-            px:'1.3rem'
+            py:'0.5rem', 
+            px:'1.2rem'
         }
       },
       // 3. We can add a new visual variant
@@ -35,7 +35,7 @@ const theme = extendTheme({
         'out-lined': {
          color:'#111',
           bg: 'transparent',
-          border: '2px solid',
+          border: '1px solid black',
           _hover:{
             bg:"#343232"
           }

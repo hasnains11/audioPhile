@@ -11,7 +11,7 @@ const HeroSection = () => {
       bgImage={[img_hero_sm,img_hero_tablet,img_hero_lg]}
       bgRepeat="none"
       bgPos={"center"}
-      bgColor={"red.100"}
+     
       bgSize={"cover"}
       bgPosition={'center'}
     >
@@ -36,14 +36,15 @@ const HeroSection = () => {
           >
             New Product
           </Text>
-            <Heading letterSpacing={1} textTransform={"uppercase"}>
+            <Heading fontSize={['3xl','4xl','5xl']} letterSpacing={1} textTransform={"uppercase"}>
               XX99 Mark II
             </Heading>
             <Heading
               marginBottom={"1rem"}
               letterSpacing={1}
               marginTop={"-0.2rem"}
-              textTransform={"uppercase"}
+              textTransform={"uppercase"} 
+              fontSize={['3xl','4xl','5xl']}
             >
               HeadPhones
             </Heading>
