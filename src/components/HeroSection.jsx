@@ -2,6 +2,7 @@ import { Box, Button, Heading, Image, Text, Flex } from "@chakra-ui/react";
 import img_hero_lg from "./../assets//home/desktop/image-hero.jpg";
 import img_hero_sm from "./../assets//home/mobile/image-header.jpg";
 import img_hero_tablet from "./../assets//home/tablet/image-header.jpg";
+import NewProduct from "./reusable/NewProuct";
 const HeroSection = () => {
   const imgPOs={base:'40rem -8rem',md:'center'};
   return (
@@ -15,7 +16,7 @@ const HeroSection = () => {
       bgSize={"cover"}
       bgPosition={'center'}
     >
-      <Box w={"80%"} m={"auto"}>
+      <Box w={"80%"} m={"auto"} pb={'9rem'} >
         <Flex
           pt={["6rem",'8rem']}
           spacing={10}
@@ -26,16 +27,7 @@ const HeroSection = () => {
           color="white"
         >
           <Box >
-          <Text
-            marginBottom={0}
-            bgClip={"text"}
-            bgGradient={"linear(to-r,#aaa,#555)"}
-            letterSpacing={4}
-            textTransform={"uppercase"}
-            align={["center", "center", "left", "left"]}
-          >
-            New Product
-          </Text>
+          <NewProduct/>
             <Heading fontSize={['3xl','4xl','5xl']} letterSpacing={1} textTransform={"uppercase"}>
               XX99 Mark II
             </Heading>
@@ -74,3 +66,6 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
+
+
+

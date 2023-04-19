@@ -1,7 +1,7 @@
 import {Text,useDisclosure,Drawer,DrawerBody,DrawerContent,DrawerHeader,DrawerOverlay,Radio,Button,RadioGroup,Stack, Flex} from '@chakra-ui/react';
 import {CloseIcon} from "@chakra-ui/icons";
 import React, { useState } from 'react'
-
+import {Link} from 'react-router-dom';
 const menuItemStyles = {
   textTransform: "uppercase",
   mb: 5,
@@ -15,10 +15,10 @@ const NavItems = ({onClose}) => (
   <Flex
     flexDir={'column'} 
   >
-    <Text {...menuItemStyles} >Home</Text>
-    <Text {...menuItemStyles} >HeadPhones</Text>
-    <Text {...menuItemStyles} >Speakers</Text>
-    <Text {...menuItemStyles} >EarPhones</Text>
+    <Link to='/'><Text {...menuItemStyles} onClick={onClose}>Home</Text></Link>
+    <Link to='headphones'><Text {...menuItemStyles} onClick={onClose}>HeadPhones</Text></Link>
+    <Link to='speakers'><Text {...menuItemStyles} onClick={onClose}>Speakers</Text></Link>
+    <Link to='earphones'><Text {...menuItemStyles} onClick={onClose}>EarPhones</Text></Link>
    
   </Flex>
 );

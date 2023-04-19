@@ -1,7 +1,7 @@
 import { Box, Text, Image, Flex, Button,useDisclosure} from "@chakra-ui/react";
 import { ArrowDownIcon } from "@chakra-ui/icons";
 import { CartIcon, Logo, Hamburger } from "../icons";
-
+import {Link} from 'react-router-dom';
 import { useState } from "react";
 import MobileNav from "./MobileNav";
 
@@ -47,10 +47,10 @@ const MenuItems = () => (
     fontWeight="semibold"
     
   >
-    <Text {...menuItemStyles}>Home</Text>
-    <Text {...menuItemStyles}>HeadPhones</Text>
-    <Text {...menuItemStyles}>Speakers</Text>
-    <Text {...menuItemStyles}>EarPhones</Text>
+   <Link to="/"><Text {...menuItemStyles}>Home</Text></Link>
+    <Link to='headphones'><Text {...menuItemStyles}>HeadPhones</Text></Link>
+    <Link to='speakers'><Text {...menuItemStyles}>Speakers</Text></Link>
+    <Link to='earphones'><Text {...menuItemStyles}>EarPhones</Text></Link>
   </Box>
 );
 
