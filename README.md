@@ -5,6 +5,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Available Scripts
 
 In the project directory, you can run:
+![image](https://user-images.githubusercontent.com/66059517/232946344-25fbf5bc-4c38-4f14-aba0-2b3b3566ffa1.png)
 
 ### `npm start`
 
@@ -69,3 +70,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 # audioPhile
+![https://thumbs.dreamstime.com/z/demo-text-businessman-dark-vintage-background-108609906.jpg](image URL)
+
+
